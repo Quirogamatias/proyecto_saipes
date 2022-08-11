@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+{% block titulo %}
+    Mensaje
+{% endblock titulo %}
+{% block body %}
+<form method="POST">
+   <p><strong>¡El alumno no se ha podido inscribir a la materia, porque ya esta inscripto!</strong></p>
+   <a class="btn btn-primary"  href="{% url 'institucion:listado_inscripciones_alumno' %}">volver a listado de Inscripcion</a>
+</form>
+{% endblock body %}
